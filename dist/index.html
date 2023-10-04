@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="./assets/heavy-check-mark.png" />
+		<title>To-Do</title>
+	<link rel="icon" href="task.png"><script defer src="bundle.js"></script></head>
+	<body id="body">
+		<div id="header"></div>
+		<div id="side-bar">
+			<div id="projects-container"></div>
+			<div class="flex py-6 justify-center space-x-2 items-center w-full">
+				<input
+					type="text"
+					id="projectInput"
+					class="text-xl p-1 rounded-lg bg-[#F6F1E9] w-1/2 text-gray-900 focus:ring-[#27374D] block min-w-0"
+					placeholder="Add Project !" />
+				<button
+					type="button"
+					id="addProjectButton"
+					class="text-white text-[20px] bg-[#526D82] focus:outline-none hover:bg-[#526D82] focus:ring-2 focus:ring-[#27374D] font-medium rounded-full text-sm px-5 py-2 m-0">
+					Add
+				</button>
+			</div>
+		</div>
+		<div id="Welcome" class="hidden">
+			Create New Project <br />
+			or <br />
+			Click on an existing one
+		</div>
+		<div id="main-content">
+			<div id="tasks" class="text-3xl py-4">Tasks</div>
+			<div id="tasks-container"></div>
+			<div class="flex py-6 justify-center space-x-2 items-center">
+				<input
+					type="text"
+					id="taskInput"
+					class="rounded-none text-xl p-1 rounded-r-lg bg-[#F6F1E9] w-1/2 text-gray-900 focus:ring-[#27374D] block min-w-0"
+					placeholder="Add Task !" />
+				<button
+					type="button"
+					id="addTaskButton"
+					class="text-white text-[20px] bg-[#526D82] focus:outline-none hover:bg-[#526D82] focus:ring-2 focus:ring-[#27374D] font-medium rounded-full text-sm px-5 py-2 m-0">
+					Add
+				</button>
+			</div>
+		</div>
+		<div id="footer"></div>
+	</body>
+</html>
