@@ -62,7 +62,7 @@ function createProjectUI() {
         projectNameDiv.innerText = project.name;
 
         projectNameDiv.addEventListener('click', function () {
-            document.getElementById('tasks').textContent = "Tasks of Project " + project.name;
+            document.getElementById('tasks').textContent = "Tasks of " + project.name;
 
             const projectIndex = projects.findIndex(function (p) {
                 return p.name === project.name;
