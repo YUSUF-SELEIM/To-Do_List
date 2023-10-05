@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: 'Handlee', serif;
+    color: #DDE6ED;
+}
+
+.grid-rows-layout {
+    grid-template-rows: auto 1fr auto;
+}
+
+.task-done {
+    text-decoration: line-through;
+    border-left: 5px solid #27374D;
+}
